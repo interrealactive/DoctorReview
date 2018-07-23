@@ -1,0 +1,63 @@
+.provider-header {
+    border-bottom: 1px solid;
+    border-color: darkgray;
+		min-height: 100px;
+		max-height: 100px;
+		line-height: 120%;
+}
+
+.header{
+	min-height: 100px;
+	max-height: 100px;
+}
+
+.provider-details {
+    border-left: 1px solid;
+    border-color: darkgray;
+    padding-left: 16px;
+    
+}
+
+.new-review-btn {
+    width: 100%;
+		margin-top: 10px;
+  	text-decoration: none;
+		background-color: #54BB9F;
+		border-color: #54BB9F;
+}
+
+.btn-primary:hover {
+	background-color: rgb(36, 68, 107) !important;
+}
+
+.provider-name{
+	font-size: 1.8rem;
+}
+
+.provider-speciality{
+	font-size: 1rem;
+}
+
+.provider-reviews{
+	font-size: 1rem;
+}
+
+.provider-address{
+	font-size: 1rem;
+}
+
+.addr-label{
+	font-size: .6rem;
+}
+
+.address-icon {
+	position: absolute;
+	left:-50px !important;
+	top:25px;
+	height:50px !important;
+	width:50px !important;
+}
+
+.addr-details {
+	padding-left: 0px;
+}

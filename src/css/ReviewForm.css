@@ -1,0 +1,62 @@
+.status-icon{
+	position:absolute;
+	top:8px;
+	right:22px;
+}
+
+.error{
+	border-color: red;
+}
+
+.review-form-label {
+	background-color: white;
+	position:absolute;
+	top:-8px;
+	left:32px;
+	font-size: .8rem;
+}
+
+.review-form input {
+	resize:both;
+}
+
+.review-form-cancel-button{
+	float:right;
+	font-size: 1.2rem;
+	width:180px;
+	border-color: red;
+	color:red;
+}
+
+.review-form-submit-button{
+	
+	font-size: 1.2rem;
+	background-color: #54BB9F;
+	border-color: #54BB9F;
+	width: 180px;
+}
+
+.review-form-submit-button :hover{
+	background-color: rgb(36, 68, 107);
+	border-color: rgb(36, 68, 107);
+}
+
+.review-form-cancel-button :hover{
+	background-color: red;
+	border-color: red;
+	color:white;
+}
+
+.review-form-submit-combo{
+	float:right;
+}
+
+.review-form-submit-icon{
+	color:white;
+	position:absolute;
+	right:30px;
+	top:17px;
+	height: 24px !important;
+	width: 24px !important;
+	padding:0px;
+}

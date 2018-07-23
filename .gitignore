@@ -9,6 +9,9 @@
 # production
 /build
 
+# devDB
+/src/data/db.json
+
 # misc
 .DS_Store
 .env.local

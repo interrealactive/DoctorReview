@@ -1,0 +1,47 @@
+.provider-search {
+    background-color: rgb(25, 22, 84);
+		height:100px;
+		background-image:
+    linear-gradient(
+      to right, 
+      rgb(25, 22, 84),rgb(36, 68, 107)
+    );
+}
+
+.input-with-icon input[type=text]{
+    padding-left:40px;
+    height: 50px;
+    color: #54BB9F;
+    border-radius: 0px;
+	}
+	
+input::-webkit-input-placeholder {
+color: #54BB9F !important;
+}
+input::-moz-placeholder {
+color: #54BB9F !important;
+}
+input:-moz-placeholder { /* Older versions of Firefox */
+color: #54BB9F !important;
+}
+input:-ms-input-placeholder {
+color: #54BB9F !important;
+}
+
+.input-with-icon svg {
+    position: absolute;
+    left:24px !important;
+    top:12px;
+    height:28px !important;
+    width:28px !important;
+    color:#aaa;
+}
+
+.input-with-icon {
+    padding-right: 30px;
+}
+
+.provider-search H2 {
+    color: white;
+    text-align: right;
+}

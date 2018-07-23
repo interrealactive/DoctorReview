@@ -1,0 +1,24 @@
+.review-item{
+    
+    margin: 16px;
+    border-top: 0px !important;
+    border-left: 0px;
+    border-right: 0px;
+    border-bottom: 1px solid darkgray !important;
+}
+
+.edit-btn {
+	font-size: .7rem;
+}
+
+.rev-item-date{
+	font-size: .8rem;
+}
+
+.rev-item-name {
+	font-size: 1rem;
+}
+
+.rev-item-body {
+	font-size: 1rem;
+}

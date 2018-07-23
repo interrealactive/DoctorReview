@@ -1,0 +1,4 @@
+.review-list-container{
+    max-height: 80vh;
+    overflow: auto;
+}
