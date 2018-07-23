@@ -1,9 +1,11 @@
 .provider-list-item {
-		border-left: 0px;
-    border-color: darkgray;
-    border-radius: 0px !important;
-		margin-left: 20px;
+		border-top: 0px !important;
+		border-left: 0px !important;
+		border-right: 0px !important;
+		margin-left: 0px;
+		margin-top: 1px;
 		padding:0px !important;
+		border-bottom: 1px darkgray solid;
 }
 
 .provider-list-item:last-child {

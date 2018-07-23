@@ -21,44 +21,46 @@ class ReviewForm extends Component {
   }
   
   renderTextArea(field) {
-    const { meta: { touched, error } } = field;
-		const hasError = touched && error;
-		const iconClass = hasError ? "text-danger" : "theme-lightblue" ;
-		const inputClass = hasError ? "review-form-error" : "" ;
-
-    return (
-      <div className="review-form form-group">
-						<div className = "col-11">
-						<label className="review-form-label theme-lightblue font-weight-light">{field.label}</label>
-						<FontAwesomeIcon className={`review-form-status-icon ${iconClass}`} icon={hasError?errorIcon:okIcon}/>
-						<textarea className={`form-control ${inputClass}`} type="text" {...field.input} />
-						<small className="form-text text-danger">
-							{touched ? error : ""}
-						</small>
-						</div>
-      </div>
-    );
+    return (this.renderField(field,"textarea"));
 	}
 	
 	renderInput(field) {
-    const { meta: { touched, error } } = field;
+    return (this.renderField(field,"input"));
+	}
+	
+	renderField(field,type) {
+		const { meta: { touched, error } } = field;
 		const hasError = touched && error;
 		const iconClass = hasError ? "text-danger" : "theme-lightblue" ;
 		const inputClass = hasError ? "error" : "" ;
 
     return (
       <div className="review-form form-group">
-				<div className = "col-11">
+				<div className = "col-12">
 						<label className="review-form-label theme-lightblue font-weight-light">{field.label}</label>
 						<FontAwesomeIcon className={`review-form-status-icon ${iconClass}`} icon={hasError?errorIcon:okIcon}/>
-						<input className={`form-control ${inputClass}`} type="text" {...field.input} />
+						{ this.renderType(field, type, inputClass)	}
 						<small className="form-text text-danger">
 							{touched ? error : ""}
 						</small>
 				</div>
       </div>
     );
-  }
+	}
+
+	renderType(field, type, inputClass){
+		switch (type) {
+			case "textarea":
+				return (
+					<textarea className={`form-control ${inputClass}`} type="text" {...field.input} />
+				);
+			case "input":
+			default:
+				return (
+					<input className={`form-control ${inputClass}`} type="text" {...field.input} />
+				);
+		}
+	}
 
   onSubmit(values) {
     if (this.props.submitAction){
@@ -103,14 +105,14 @@ class ReviewForm extends Component {
           <Field
             label="Your Review"
             name="body"
-            component={this.renderTextArea}
+            component={this.renderTextArea.bind(this)}
           />
           <Field
             label="Your Display Name"
             name="name"
-            component={this.renderInput}
+            component={this.renderInput.bind(this)}
           />
-					<div className = "col-10 offset-1">
+					<div className = "col-12">
 						{this.renderSubmitButton()}
 						{this.renderCancelButton()}
 						
