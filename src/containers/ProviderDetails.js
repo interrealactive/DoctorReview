@@ -36,21 +36,21 @@ class ProviderDetails extends Component {
 
     return (
       <div className="provider-details">
-        <div className="provider-header row">
+        <div className="row">
           <div className="col">
-							<img className="p-3 h-100 float-left rounded-circle" alt="" src={provider.imageUrl} />
+							<img className="provider-details-image float-left rounded-circle" alt="" src={provider.imageUrl} />
 							<div className="col">
-							<div className="provider-name text-left mt-3 theme-darkblue">{provider.name}</div>
-							<div className="provider-speciality text-left mt-2 font-weight-light theme-lightblue">{provider.speciality}</div>
-							<div className="provider-reviews text-left mt-1 font-weight-light">{`${reviewCount} review${(reviewCount === 1) ? '' : 's'}`}</div>
+							<div className="provider-details-name text-left mt-3 theme-darkblue">{provider.name}</div>
+							<div className="provider-details-speciality text-left mt-2 font-weight-light theme-lightblue">{provider.speciality}</div>
+							<div className="provider-details-reviews text-left mt-1 font-weight-light">{`${reviewCount} review${(reviewCount === 1) ? '' : 's'}`}</div>
 						</div>
           </div>
           <div className="col-4">
-						<FontAwesomeIcon className="address-icon theme-darkblue" icon={mapIcon}/>
-						<div className="addr-details">
-							<div className="mt-3 addr-label font-weight-light"> ADDRESS</div>
-							<div className="provider-address theme-lightblue">{provider.street}</div>
-							<div className="provider-address mt-1 theme-lightblue">{`${provider.city}, ${provider.state} ${provider.zipcode}`}</div>
+						<FontAwesomeIcon className="provider-details-address-icon theme-darkblue" icon={mapIcon}/>
+						<div className="provider-details-address-details">
+							<div className="mt-3 provider-details-address-label font-weight-light"> ADDRESS</div>
+							<div className="provider-details-address theme-lightblue">{provider.street}</div>
+							<div className="provider-details-address mt-1 theme-lightblue">{`${provider.city}, ${provider.state} ${provider.zipcode}`}</div>
 						</div>
           </div>
         </div>

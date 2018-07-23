@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 import '../css/DoctorReview.css';
-import ProviderSearch from './ProviderSearch';
-import ProviderList from './ProviderList';
-import ProviderDetail from './ProviderDetails';
-import ReviewNew from './ReviewNew';
-import ReviewEdit from './ReviewEdit';
-import ReviewList from './ReviewList';
+import ProviderSearch from '../containers/ProviderSearch';
+import ProviderList from '../containers/ProviderList';
+import ProviderDetail from '../containers/ProviderDetails';
+import ReviewNew from '../containers/ReviewNew';
+import ReviewEdit from '../containers/ReviewEdit';
+import ReviewList from '../containers/ReviewList';
 import { BrowserRouter, Route, Switch} from 'react-router-dom';
 
 
@@ -17,10 +17,10 @@ class DoctorReview extends Component {
         <div className="doctor-review col-sm-10 offset-sm-1">
           <ProviderSearch />
           <div className="row">
-            <div className="list-frame col-sm-4">
+            <div className="doctor-review-list-frame col-sm-4">
               <ProviderList />
             </div>
-            <div className="detail-frame col-sm-8">
+            <div className="doctor-review-detail-frame col-sm-8">
 							<Route path="/provider/:id" component={ProviderDetail} />
 							<Switch>
 								

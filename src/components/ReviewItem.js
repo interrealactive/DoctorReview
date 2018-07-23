@@ -8,10 +8,10 @@ class ReviewList extends Component {
     const { review, id } = this.props;
     return (
       <li className="list-group-item review-item"> 
-        <Link className="float-right edit-btn theme-lightblue" to={`/provider/${id}/review/${review.id}/edit`}>EDIT</Link>
-        <div className="rev-item-date theme-light">{review.date}</div> 
-        <div className="mt-1 font-weight-bold rev-item-name theme-dark">{review.name}</div> 
-        <div className="mt-3 rev-item-body theme-medium">{review.body}</div> 
+        <Link className="float-right review-item-edit-button theme-lightblue" to={`/provider/${id}/review/${review.id}/edit`}>EDIT</Link>
+        <div className="review-item-date theme-light">{review.date}</div> 
+        <div className="mt-1 font-weight-bold review-item-name theme-dark">{review.name}</div> 
+        <div className="mt-3 review-item-body theme-medium">{review.body}</div> 
       </li>
     );
   }

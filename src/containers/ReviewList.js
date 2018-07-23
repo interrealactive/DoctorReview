@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { getReviews } from "../actions";
 import { Link } from 'react-router-dom';
-import ReviewItem from './ReviewItem';
+import ReviewItem from '../components/ReviewItem';
 import '../css/ReviewList.css';
 
 class ReviewList extends Component {
@@ -30,7 +30,7 @@ class ReviewList extends Component {
 						</div>
           </div>
           <div className="col-sm-3">
-            <Link className="new-review-btn btn btn-primary" to={`/provider/${id}/review/new`}>
+            <Link className="review-list-new-button btn btn-primary" to={`/provider/${id}/review/new`}>
               Leave a Review
             </Link>
           </div>

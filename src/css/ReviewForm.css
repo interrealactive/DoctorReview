@@ -1,10 +1,10 @@
-.status-icon{
+.review-form-status-icon{
 	position:absolute;
 	top:8px;
 	right:22px;
 }
 
-.error{
+.review-form-error{
 	border-color: red;
 }
 

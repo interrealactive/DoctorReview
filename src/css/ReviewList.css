@@ -1,4 +1,16 @@
-.review-list-container{
-    max-height: 80vh;
-    overflow: auto;
+.review-list{
+	max-height: 72vh;
+	overflow: auto;
+}
+
+.review-list-new-button {
+	width: 100%;
+	margin-top: 10px;
+	text-decoration: none;
+	background-color: #54BB9F;
+	border-color: #54BB9F;
+}
+
+.review-list-new-button :hover {
+	background-color: rgb(36, 68, 107) !important;
 }

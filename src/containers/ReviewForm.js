@@ -24,13 +24,13 @@ class ReviewForm extends Component {
     const { meta: { touched, error } } = field;
 		const hasError = touched && error;
 		const iconClass = hasError ? "text-danger" : "theme-lightblue" ;
-		const inputClass = hasError ? "error" : "" ;
+		const inputClass = hasError ? "review-form-error" : "" ;
 
     return (
       <div className="review-form form-group">
 						<div className = "col-11">
 						<label className="review-form-label theme-lightblue font-weight-light">{field.label}</label>
-						<FontAwesomeIcon className={`status-icon ${iconClass}`} icon={hasError?errorIcon:okIcon}/>
+						<FontAwesomeIcon className={`review-form-status-icon ${iconClass}`} icon={hasError?errorIcon:okIcon}/>
 						<textarea className={`form-control ${inputClass}`} type="text" {...field.input} />
 						<small className="form-text text-danger">
 							{touched ? error : ""}
@@ -50,7 +50,7 @@ class ReviewForm extends Component {
       <div className="review-form form-group">
 				<div className = "col-11">
 						<label className="review-form-label theme-lightblue font-weight-light">{field.label}</label>
-						<FontAwesomeIcon className={`status-icon ${iconClass}`} icon={hasError?errorIcon:okIcon}/>
+						<FontAwesomeIcon className={`review-form-status-icon ${iconClass}`} icon={hasError?errorIcon:okIcon}/>
 						<input className={`form-control ${inputClass}`} type="text" {...field.input} />
 						<small className="form-text text-danger">
 							{touched ? error : ""}

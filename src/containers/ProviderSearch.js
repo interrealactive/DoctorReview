@@ -27,9 +27,9 @@ class ProviderSearch extends Component {
         <h2 className="col-sm-2 text-center">
           Doctors
         </h2>
-				<div className = "col-sm-10 input-with-icon">
-					<FontAwesomeIcon icon={faSearch}/>
-					<input onChange={this.onInputChange} type="text" className="form-control" placeholder="Search doctors by name"/>
+				<div className = "col-sm-10 provider-search-container">
+					<FontAwesomeIcon className="provider-search-icon" icon={faSearch}/>
+					<input onChange={this.onInputChange} type="text" className="provider-search-input form-control" placeholder="Search doctors by name"/>
 				</div>
       </div>
     );

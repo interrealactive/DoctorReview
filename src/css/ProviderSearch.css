@@ -8,27 +8,27 @@
     );
 }
 
-.input-with-icon input[type=text]{
+.provider-search-container input[type=text]{
     padding-left:40px;
     height: 50px;
     color: #54BB9F;
     border-radius: 0px;
 	}
 	
-input::-webkit-input-placeholder {
+.provider-search-container input::-webkit-input-placeholder {
 color: #54BB9F !important;
 }
-input::-moz-placeholder {
+.provider-search-container input::-moz-placeholder {
 color: #54BB9F !important;
 }
-input:-moz-placeholder { /* Older versions of Firefox */
+.provider-search-container input:-moz-placeholder { /* Older versions of Firefox */
 color: #54BB9F !important;
 }
-input:-ms-input-placeholder {
+.provider-search-container input:-ms-input-placeholder {
 color: #54BB9F !important;
 }
 
-.input-with-icon svg {
+.provider-search-container svg {
     position: absolute;
     left:24px !important;
     top:12px;
@@ -37,7 +37,7 @@ color: #54BB9F !important;
     color:#aaa;
 }
 
-.input-with-icon {
+.provider-search-container {
     padding-right: 30px;
 }
 

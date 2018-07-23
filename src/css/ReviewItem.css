@@ -7,18 +7,18 @@
     border-bottom: 1px solid darkgray !important;
 }
 
-.edit-btn {
+.review-item-edit-button {
 	font-size: .7rem;
 }
 
-.rev-item-date{
+.review-item-date{
 	font-size: .8rem;
 }
 
-.rev-item-name {
+.review-item-name {
 	font-size: 1rem;
 }
 
-.rev-item-body {
+.review-item-body {
 	font-size: 1rem;
 }

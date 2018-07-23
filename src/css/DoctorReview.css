@@ -1,9 +1,11 @@
-.list-frame{
+.doctor-review-list-frame{
     padding-right: 0px !important;
 }
 
-.detail-frame{
-    padding-left: 0px !important;
+.doctor-review-detail-frame{
+		padding-left: 0px !important;
+		border-left: 1px solid;
+		border-color: darkgray;
 }
 
 .theme-darkblue{
